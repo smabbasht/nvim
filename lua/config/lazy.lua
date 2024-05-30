@@ -10,7 +10,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins", keys = false },
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.lang.rust" },
@@ -46,3 +46,30 @@ require("lazy").setup({
     },
   },
 })
+
+-- local dap = require("dap")
+--
+-- dap.adapters.codelldb = {
+--   type = "server",
+--   port = "${port}",
+--   executable = {
+--     -- Change this to your path!
+--     command = "~/Sources/lldb/extension/adapter/codelldb",
+--     args = { "--port", "${port}" },
+--   },
+-- }
+--
+-- dap.configurations.rust = {
+--   {
+--     name = "Launch file (Github Snippet)",
+--     type = "codelldb",
+--     request = "launch",
+--     program = function()
+--       return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+--     end,
+--     cwd = "${workspaceFolder}",
+--     stopOnEntry = false,
+--   },
+-- }
+--
+-- require("dapui").setup({})
