@@ -6,8 +6,17 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
+  config = function()
+    require("neo-tree").setup({
+      close_if_last_window = true,
+      window = {
+        position = "right",
+      },
+    })
+  end,
   keys = {
-    { "<C-b>", ":Neotree filesystem toggle right<CR>" },
+    { "<C-b>", ":Neotree toggle<CR>" },
+    -- { "<C-B>", ":Neotree close<CR>" },
     { "<leader>bf", ":Ex<CR>" },
   },
 }

@@ -4,7 +4,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       vim.keymap.set("n", "<leader>xx", function()
-        require("trouble").toggle()
+        require("trouble").toggle("diagnostics")
       end)
       vim.keymap.set("n", "<leader>xw", function()
         require("trouble").toggle("workspace_diagnostics")
@@ -14,6 +14,7 @@ return {
       end)
     end,
     opts = {},
+    lazy = false,
   },
   -- TODO:
   {

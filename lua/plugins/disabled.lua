@@ -1,5 +1,5 @@
 return {
-  { "auto-save.nvim", enabled = false },
+  -- { "auto-save.nvim", enabled = false },
   { "flash.nvim", enabled = false },
   { "noice.nvim", enabled = false },
   { "dashboard-nvim", enabled = false },
@@ -14,5 +14,5 @@ return {
   { "nvim-notify", enabled = false },
   { "nvim-spectre", enabled = false },
   { "bufferline.nvim", enabled = false },
-  { "catppuccin", enabled = false },
+  -- { "catppuccin", enabled = false },
 }
