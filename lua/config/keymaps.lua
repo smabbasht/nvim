@@ -29,8 +29,8 @@ vim.keymap.set({ "n", "v" }, "<leader>op", [[o<esc>p]])
 vim.keymap.set({ "n", "v" }, "<leader>Op", [[O<esc>p]])
 
 -- vim.keymap.set("n", "<leader>s", [[:w<CR>]] ) -- search and replace
-vim.keymap.set("i", "<C-s>", [[<esc>:w<CR>li]]) -- search and replace
-vim.keymap.set("n", "<C-s>", [[:w<CR>]]) -- search and replace
+vim.keymap.set("i", "<C-s>", [[<esc>:ASToggle<CR>]]) -- search and replace
+vim.keymap.set("n", "<C-s>", [[:ASToggle<CR>]]) -- search and replace
 
 -- [f]ormat the Buffer
 vim.keymap.set("n", "<C-f>", vim.lsp.buf.format)
@@ -43,14 +43,3 @@ vim.keymap.set("n", "B", [[c^]])
 
 -- Make current file executable
 vim.keymap.set("n", "<leader>x", "[[:!chmod +x %<CR><CR>]]")
-
--- Navigation
--- vim.keymap.set({ "n", "v", "i" }, "<C-h>", "<C-w>h")
--- vim.keymap.set({ "n", "v", "i" }, "<C-j>", "<C-w>j")
--- vim.keymap.set({ "n", "v", "i" }, "<C-k>", "<C-w>k")
--- vim.keymap.set({ "n", "v", "i" }, "<C-l>", "<C-w>l")
-
--- vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
--- vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
--- vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
--- vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
