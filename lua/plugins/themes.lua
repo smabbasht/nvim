@@ -3,9 +3,6 @@ return {
     "Mofiqul/dracula.nvim",
     lazy = false,
     name = "dracula",
-    -- config = function()
-    -- vim.api.nvim_set_hl(0, "Comment", { fg = "#81A1C1" })
-    -- end,
   },
   {
     "olimorris/onedarkpro.nvim",
@@ -75,7 +72,7 @@ return {
         },
         livePreview = true,
       })
-      vim.cmd.colorscheme("onedark_dark")
+      vim.cmd.colorscheme("dracula")
       vim.api.nvim_set_hl(0, "Comment", { fg = "#6181A1" })
       vim.api.nvim_set_hl(0, "LspInlayHint", { fg = "#81A1C1" })
     end,

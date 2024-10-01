@@ -2,10 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 -- No-op the arrow keys
-vim.keymap.set({ "n", "v", "i" }, "<Up>", "<nop>")
-vim.keymap.set({ "n", "v", "i" }, "<Down>", "<nop>")
-vim.keymap.set({ "n", "v", "i" }, "<Left>", "<nop>")
-vim.keymap.set({ "n", "v", "i" }, "<Right>", "<nop>")
 
 -- map H to 'Hzz' and L to 'Lzz
 vim.keymap.set({ "n", "v" }, "H", "Hzz")
