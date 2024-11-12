@@ -36,8 +36,9 @@ vim.opt.updatetime = 50
 vim.o.numberwidth = 1
 vim.opt.cursorline = true
 
-vim.g.python3_host_prog = "/usr/bin/python3"
-
 vim.g.transparent_enabled = true
 
 vim.g.surround_no_insert_space = 1
+
+vim.g.python3_host_prog = "/usr/bin/python3"
+vim.g.lazyvim_python_lsp = "pyright"
