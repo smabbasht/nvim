@@ -42,3 +42,6 @@ vim.g.surround_no_insert_space = 1
 
 vim.g.python3_host_prog = "/usr/bin/python3"
 vim.g.lazyvim_python_lsp = "pyright"
+
+vim.env.JAVA_HOME = "/usr/lib/jvm/jdk-23-oracle-x64"
+vim.env.PATH = vim.env.JAVA_HOME .. "/bin:" .. vim.env.PATH
