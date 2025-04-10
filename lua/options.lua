@@ -1,6 +1,10 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+require "nvchad.options"
+
+-- add yours here!
+
+-- local o = vim.o
+-- o.cursorlineopt ='both' -- to enable cursorline!
+
 vim.g.mapleader = " "
 vim.g.background = "light"
 
@@ -41,7 +45,6 @@ vim.g.transparent_enabled = true
 vim.g.surround_no_insert_space = 1
 
 vim.g.python3_host_prog = "/usr/bin/python3"
-vim.g.lazyvim_python_lsp = "pyright"
 
 vim.env.JAVA_HOME = "/usr/lib/jvm/jdk-23-oracle-x64"
 vim.env.PATH = vim.env.JAVA_HOME .. "/bin:" .. vim.env.PATH
