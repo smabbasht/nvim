@@ -1,5 +1,6 @@
-require "nvchad.mappings"
-
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
 local map = vim.keymap.set
 
 map({ "n", "v" }, "H", "Hzz")
@@ -11,7 +12,7 @@ map("n", "<leader>h", vim.cmd.bprevious)
 -- Browse Files
 map("n", "<leader>u", vim.cmd.UndotreeToggle)
 
-map("v", "<leader>y", [["+y"<CR>]])      -- copy to system clipboard
+map("v", "<leader>y", [["+y"<CR>]]) -- copy to system clipboard
 map("v", "<leader>Y", ":w !wl-copy<CR>") -- copy to system clipboard
 
 map("v", "<leader>p", [["_dP]])
@@ -22,9 +23,9 @@ map("v", "K", [[:m '>-2<CR>gv=gv]])
 map({ "n", "v" }, "<leader>op", [[o<esc>p]])
 map({ "n", "v" }, "<leader>Op", [[O<esc>p]])
 
-map("n", "<leader>s", [[:w<CR>]])         -- search and replace
+map("n", "<leader>s", [[:w<CR>]]) -- search and replace
 map("i", "<C-s>", [[<esc>:ASToggle<CR>]]) -- search and replace
-map("n", "<C-s>", [[:ASToggle<CR>]])      -- search and replace
+map("n", "<C-s>", [[:ASToggle<CR>]]) -- search and replace
 
 -- [f]ormat the Buffer
 map("n", "<C-f>", vim.lsp.buf.format)
