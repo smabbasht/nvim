@@ -38,3 +38,6 @@ map("n", "B", [[c^]])
 
 -- Make current file executable
 map("n", "<leader>x", "[[:!chmod +x %<CR><CR>]]")
+
+-- Plugin keymaps
+vim.keymap.set({ "n", "i" }, "<C-b>", ":Neotree toggle<CR>")

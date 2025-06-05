@@ -46,5 +46,7 @@ vim.g.surround_no_insert_space = 1
 
 vim.g.python3_host_prog = vim.fn.system("which python")
 
+vim.g.lazyvim_picker = nil
+
 vim.env.JAVA_HOME = "/home/ubuntu/.sdkman/candidates/java/23-tem"
 vim.env.PATH = vim.env.JAVA_HOME .. "/bin:" .. vim.env.PATH

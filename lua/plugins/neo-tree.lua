@@ -15,8 +15,4 @@ return {
       },
     })
   end,
-  keys = {
-    { "<C-b>", ":Neotree toggle<CR>" },
-    { "<leader>bf", ":Ex<CR>" },
-  },
 }

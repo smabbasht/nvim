@@ -1,0 +1,16 @@
+return {
+  { "auto-save.nvim", enabled = false },
+  -- { "flash.nvim", enabled = false },
+  { "noice.nvim", enabled = false },
+  { "dashboard-nvim", enabled = false },
+  { "indent-blankline.nvim", enabled = false },
+  { "dressing.nvim", enabled = false },
+  { "ts-comments.nvim", enabled = false },
+  { "nvim-ts-autotag", enabled = false },
+  { "persistence.nvim", enabled = false },
+  -- { "tokyonight.nvim", enabled = false },
+  { "nvim-notify", enabled = false },
+  -- { "nvim-spectre", enabled = false },
+  { "bufferline.nvim", enabled = false },
+  -- { "catppuccin", enabled = false },
+}
