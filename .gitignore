@@ -6,3 +6,16 @@ debug
 foo.*
 *.log
 data
+
+lua/config/autocmd.lua
+lua/config/lazy.lua
+lua/plugins/example.lua
+lua/plugins/snacks-animated-scrolling-off.lua
+lua/plugins/theme.lua
+plugin
+init.lua
+lazy-lock.json
+lazyvim.json
+LICENSE
+README.md
+stylua.toml
